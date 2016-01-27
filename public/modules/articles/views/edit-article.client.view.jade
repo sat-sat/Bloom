@@ -1,0 +1,15 @@
+section(data-ng-init="findOne()")
+  h1 Edit Article
+  form(data-ng-submit="update()" novalidate)
+    div
+      label(for="title") Title
+      div
+        input(type="text" data-ng-model="article.title" id="title" placeholder="Title" required)
+    div
+      label(for="content") Content
+      div
+        textarea(data-ng-model="article.content" id="content" cols="30" rows="10" placeholder="Content")
+    div
+      input(type="submit" value="Update")
+    div(data-ng-show="error")
+      strong(data-ng-bind="error")

@@ -1,0 +1,64 @@
+doctype html
+html(lang='eng')
+  head      
+    title Journal App
+
+    // General META
+    meta(http-equiv='Content-type' content='text/html;charset=UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+
+    // Responsive META
+    meta(name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1')
+    meta(name='apple-mobile-web-app-capable' content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style' content='black')
+
+    // Semantic META
+    //- meta(name='keywords' content=keywords)
+    //- meta(name='description' content=description)
+
+    // Fav Icon
+    link(rel="icon", href="/images/core-favicon.png?v=2")
+
+    // Application CSS Files
+    //- link(rel="stylesheet", href="/stylesheets/main.css")
+
+    // Modernizr Always Load After CSS
+    script(type="text/javascript", src="/scripts/modernizr.js")
+
+    // HTML5 Shim
+    <!--[if lt IE 9]>
+    script(src="http://html5shim.googlecode.com/svn/trunk/html5.js")
+    <![endif]-->
+
+    // Load The Typekit Script
+    //- script(type='text/javascript', src='//use.typekit.net/moz0yvp.js')
+    //- script.
+    //-   try{Typekit.load({ 
+    //-     async: false,
+    //-     classes: false
+    //-   });}catch(e){}
+
+  body
+
+
+    // Inline SVG's
+    //- div(style="height: 0; width: 0; position: absolute; visibility: hidden")
+    //-   span(ng-include="'/icons/main.svg'")
+
+    main.container
+      ui-view
+
+
+    // Application Javascript Files
+    //- script(type="text/javascript", src='/javascripts/vendor.js')
+    script(type="text/javascript", src='/scripts/main.js')
+    
+    // Google Analytics
+    //- noscript
+      //- iframe(src='//www.googletagmanager.com/ns.html?id=GTM-58HXRT', height='0', width='0', style='display:none;visibility:hidden')
+    //- script.
+      //- (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      //- new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      //- j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      //- '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      //- })(window,document,'script','dataLayer','GTM-58HXRT');

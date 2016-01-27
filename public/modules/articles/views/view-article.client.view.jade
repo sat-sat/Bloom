@@ -1,0 +1,12 @@
+section(data-ng-init="findOne()")
+  h1(data-ng-bind="article.title")
+  div(data-ng-show="authentication.user._id == article.creator._id")
+    a(href="/articles/{{article._id}}/edit") edit
+    span  
+    a(href="/" data-ng-click="delete();") delete
+  small
+    em Postsed on 
+    em(data-ng-bind="article.created | date:'mediumDate'")
+    em  by 
+    em(data-ng-bind="article.creator.fullName")
+  p(data-ng-bind="article.content")

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Use the 'title' property to render a page title  -->
+	<title><%= title %></title>
+
+  <link rel="stylesheet" href="/stylesheets/main.css">
+</head>
+<body>
+  
+  <header class="main-header">
+    <div class="main-header__container">
+      <div class="main-header__logo">Abyss</div>
+      <nav class="main-header__login">
+        <% if (user) { %>
+          <li><a href="/signout">Sign out</a></li>
+        <%  } else { %>
+          <li><a href="/signup">Signup</a></li>
+          <li><a href="/signin">Signin</a></li>
+        <% } %>    
+      </nav>
+    </div>
+  </header>
+
+	<section ng-view></section>
+
+	<script type="text/javascript">
+		window.user = <%- user || 'null' %>;
+	</script>
+
+	<script type="text/javascript" src="/scripts/main.js"></script>
+</body>
+</html>

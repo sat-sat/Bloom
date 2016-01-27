@@ -1,0 +1,15 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": 0,
+    "semi": 0,
+    "indent": [2, 2, {"SwitchCase": 0}]
+  },
+  "globals": {
+    "angular": 1,
+    "$": 1,
+    "Modernizr": 1,
+    "google": 1,
+    "Foundation": 1
+  }
+}
