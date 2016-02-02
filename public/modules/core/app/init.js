@@ -17,7 +17,7 @@ export default function (ApplicationConfiguration) {
     }]);
 
   angular.element(document).ready(() => {
-    if (window.location.hash === '#_=_') window.location.hash = '#!';
+    if (window.location.hash === '#_=_') window.location.hash = '!';
     angular.bootstrap(document, [ApplicationConfiguration.applicationModuleName])
   })
 

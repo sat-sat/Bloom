@@ -1,7 +1,7 @@
 'use strict';
 
 export default {
-  db: 'mongodb://localhost/mean-development',
+  db: 'mongodb://satoru:Bloom!@ds049854.mongolab.com:49854/bloom',
   sessionSecret: 'developmentSessionSecret',
   facebook: {
     clientID: 'Facebook Application ID',

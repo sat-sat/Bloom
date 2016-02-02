@@ -5,5 +5,5 @@
     <li data-ng-repeat="article in articles" data-ng-show="authentication.user.username == article.creator.username"><a data-ng-href="/#/articles/{{article._id}}" data-ng-bind="article.title"></a><br/><small data-ng-bind="article.created | date:'medium'"></small><small>&nbsp;/&nbsp;</small><small data-ng-bind="article.creator.fullName">
         <p data-ng-bind="article.content"></p></small></li>
   </ul>
-  <div data-ng-hide="!articles || articles.length">No articles tet, why don't you <a href="/articles/create">create one</a>?</div>
+  <div data-ng-hide="!articles || articles.length">No articles yet, why don't you <a href="/#/articles/create">create one</a>?</div>
 </section>

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!-- Use the 'title' property to render a page title  -->
+	
 	<title><%= title %></title>
+
+  <base href="/">
 
   <link rel="stylesheet" href="/stylesheets/main.css">
 </head>
@@ -10,19 +12,21 @@
   
   <header class="main-header">
     <div class="main-header__container">
-      <div class="main-header__logo">Abyss</div>
-      <nav class="main-header__login">
-        <% if (user) { %>
-          <li><a href="/signout">Sign out</a></li>
-        <%  } else { %>
-          <li><a href="/signup">Signup</a></li>
-          <li><a href="/signin">Signin</a></li>
-        <% } %>    
+      <div class="main-header__logo"><a href="/">Bloom</a></div>
+
+      <nav class="main-header__account">
+          <% if (user) { %>
+            <a href="/signout">Sign out</a>
+          <%  } else { %>
+          <% } %>
       </nav>
+
     </div>
   </header>
 
-	<section ng-view></section>
+  <main class="main">
+    <section class="main__container" ng-view></section>
+  </main>
 
 	<script type="text/javascript">
 		window.user = <%- user || 'null' %>;

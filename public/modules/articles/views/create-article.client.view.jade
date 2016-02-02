@@ -3,11 +3,9 @@ section
 
   form(data-ng-submit="create()" novalidate)
     div
-      label(for="title") Title
       div
-        input(type="text" data-ng-model="title" id="title" placeholder="Title" required)
+        input(type="text" data-ng-model="title" id="title" placeholder="Title" autofocus autocomplete="off" required)
     div
-      label(for="content") Content
       div
         textarea(data-ng-model="content" id="content" cols="30" rows="10" placeholder="Content")
     div

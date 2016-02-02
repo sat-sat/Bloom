@@ -1,7 +1,7 @@
 function route($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: 'views/example/example.client.view.html'
+      templateUrl: 'views/login/login.client.view.html'
     })
     .otherwise({
       redirectTo: '/'

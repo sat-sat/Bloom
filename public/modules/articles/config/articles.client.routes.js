@@ -1,4 +1,4 @@
-function route($routeProvider) {
+function route($routeProvider, $locationProvider) {
   $routeProvider
     .when('/articles', {
       templateUrl: 'views/articles/list-articles.client.view.html',
@@ -18,5 +18,5 @@ function route($routeProvider) {
     });
 };
 
-route.$inject = ['$routeProvider']
+route.$inject = ['$routeProvider', '$locationProvider']
 export default route

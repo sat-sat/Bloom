@@ -26,6 +26,10 @@ public/client/javascripts
 public/client/stylesheets
 public/vendor
 
+# Misc folders
+# ======================
+public/modules-es5
+
 # Sublime editor
 # ==============
 .sublime-project

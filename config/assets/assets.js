@@ -25,7 +25,8 @@ module.exports = {
       './public/modules/*/views/**/*.jade'
       // './public/core/views/partials/**/*.jade',
       // './public/core/views/layout/layout.jade'
-    ]
+    ],
+    images: ['public/modules/core/images/**/*.{png,jpg,gif,jpeg,ico}'],
   },
   server: {
     allJS: ['gulpfile.babel.js', 'server.js', 'config/**/*.js', 'app/**/*.js'] 

@@ -16,4 +16,5 @@ gulp.task('watch', ['watchify'], () => {
 	gulp.watch(config.client.js, ['eslint']);
 	gulp.watch(config.client.views, ['views-watch']);
   gulp.watch(config.client.sass, ['styles']);
+  gulp.watch(config.client.images, ['images']);
 });

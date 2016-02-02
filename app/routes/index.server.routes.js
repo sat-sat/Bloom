@@ -1,8 +1,7 @@
 'use strict';
 
-export default function(app) {
-	
-  let index = require('../controllers/index.server.controller');
+import user from '../controllers/index.server.controller'
 
-  app.get('/', index.render);
+export default function(app) {
+  app.get('/', user.isLoggedIn);
 };
